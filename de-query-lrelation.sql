@@ -1,0 +1,31 @@
+SELECT COUNT(*) AS PostCount, SUM(ViewCount) AS CombinedViewCount
+FROM Posts
+WHERE (Tags LIKE '%<##Language##>%' AND Tags LIKE '%<trading>%')
+OR    (Tags LIKE '%<##Language##>%' AND Tags LIKE '%<stock>%')
+OR    (Tags LIKE '%<##Language##>%' AND Tags LIKE '%<cryptocurrency>%')
+OR    (Tags LIKE '%<##Language##>%' AND Tags LIKE '%<quantitative-finance>%')
+OR    (Tags LIKE '%<##Language##>%' AND Tags LIKE '%<algorithmic-trading>%')
+OR    (Tags LIKE '%<##Language##>%' AND Tags LIKE '%<yfinance>%')
+OR    (Tags LIKE '%<##Language##>%' AND Tags LIKE '%<interactive-brokers>%')
+OR    (Tags LIKE '%<##Language##>%' AND Tags LIKE '%<finance>%')
+OR    (Tags LIKE '%<##Language##>%' AND Tags LIKE '%<quantlib>%')
+OR    (Tags LIKE '%<##Language##>%' AND Tags LIKE '%<back-testing>%')
+
+OR    (Tags LIKE '%<##Language##>%' AND Tags LIKE '%<technical-indicator>%')
+OR    (Tags LIKE '%<##Language##>%' AND Tags LIKE '%<binance>%')
+OR    (Tags LIKE '%<##Language##>%' AND Tags LIKE '%<yahoo-finance>%')
+OR    (Tags LIKE '%<##Language##>%' AND Tags LIKE '%<google-finance>%')
+OR    (Tags LIKE '%<##Language##>%' AND Tags LIKE '%<mplfinance>%')
+OR    (Tags LIKE '%<##Language##>%' AND Tags LIKE '%<forex>%')
+OR    (Tags LIKE '%<##Language##>%' AND Tags LIKE '%<coinbase-api>%')
+OR    (Tags LIKE '%<##Language##>%' AND Tags LIKE '%<ccxt>%')
+OR    (Tags LIKE '%<##Language##>%' AND Tags LIKE '%<stockquotes>%')
+OR    (Tags LIKE '%<##Language##>%' AND Tags LIKE '%<ta-lib>%')
+OR    (Tags LIKE '%<##Language##>%' AND Tags LIKE '%<candlestick-chart>%')
+
+OR    (Tags LIKE '%<##Language##>%' AND Tags LIKE '%<hft>%')
+OR    (Tags LIKE '%<##Language##>%' AND Tags LIKE '%<orderbook>%')
+OR    (Tags LIKE '%<##Language##>%' AND Tags LIKE '%<candlesticks>%')
+OR    (Tags LIKE '%<##Language##>%' AND Tags LIKE '%<computational-finance>%')
+OR    (Tags LIKE '%<##Language##>%' AND Tags LIKE '%<kucoin>%')
+OR    (Tags LIKE '%<##Language##>%' AND Tags LIKE '%<huobi>%');
